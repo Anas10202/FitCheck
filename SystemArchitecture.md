@@ -1,7 +1,7 @@
 # Fit Check Archetecture
 
 ![Fit Check Architecture](./entity_diagram.png)
-![Fit Check Architecture](./sequence_diagram.png_diagram.png)
+![Fit Check Architecture](./sequence_diagram.png)
 ![Fit Check Architecture](./system_architecture.png_diagram.png)
 
 Fit Check is built around two main components: a website (hosted on Vercel) and a Chrome extension, both connected to a Supabase backend.
