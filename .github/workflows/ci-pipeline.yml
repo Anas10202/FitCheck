@@ -34,7 +34,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: 3.10
 
       - name: Install Python dependencies
         run: |
@@ -44,12 +44,15 @@ jobs:
           playwright install
 
       - name: Install frontend dependencies
+        working-directory: ./fitcheck
         run: npm install
 
       - name: Build Next.js app
+        working-directory: ./fitcheck
         run: npm run build
 
       - name: Start Next.js server in background
+        working-directory: ./fitcheck
         run: |
           nohup npm run start &
 
@@ -69,4 +72,3 @@ jobs:
         with:
           name: coverage-report
           path: htmlcov
-
