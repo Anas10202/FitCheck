@@ -1,4 +1,6 @@
 api/app.py
+amazon-order-csv
+Chrome Extension
 *.py
 requirements.txt
 .env
