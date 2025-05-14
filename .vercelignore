@@ -1,4 +1,6 @@
 api/app.py
+fitcheck/pages/api/user_rec
+fitcheck/utils/supabase/recommendationService.js
 amazon-order-csv
 Chrome Extension
 *.py
